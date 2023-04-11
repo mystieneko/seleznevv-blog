@@ -32,7 +32,7 @@ a:hover {
     color: #bcbcbc;
 }
 
-button, input {
+button, input, .footer {
     font-size: 18px;
     padding: 8px 18px;
     border: 2px solid #fff;
@@ -49,10 +49,6 @@ button:hover, input:hover {
     background-color: #eee;
     color: #000;
     border-color: #eee;
-}
-
-.footer {
-    
 }
 
 .main-block {
