@@ -13,7 +13,7 @@ h1, h2, p {
     color: #fff;
 }
 
-button, form, input {
+button, input {
     font-size: 18px;
     padding: 8px 18px;
     border: 2px solid #fff;
@@ -26,7 +26,7 @@ button, form, input {
     cursor: pointer;
 }
 
-button:hover, form:hover, input:hover {
+button:hover, input:hover {
     background-color: #eee;
     color: #000;
     border-color: #eee;
