@@ -6,7 +6,10 @@
     text-align: center;
 }
 body{
-    background-color: #333;
+    background-image: url('bg_seleznevv.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1, h2, p {
