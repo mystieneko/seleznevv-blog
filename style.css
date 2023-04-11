@@ -13,12 +13,17 @@ h1, h2, p {
     color: #fff;
 }
 
-button, form {
-    padding 18px 14px;
-    background-color: #999 !important;
-    color: #fff;
-    border: none;
+button {
+    font-size: 18px;
+    padding: 8px 18px;
+    border: 2px solid #fff;
     border-radius: 5px;
+    color: #fff;
+    background-color: #999;
+    transition-duration: 0.1s;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
 }
 
 button:hover {
