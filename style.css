@@ -6,10 +6,15 @@
     text-align: center;
 }
 body{
+
+}
+
+.background {
     background-image: url('bg_seleznevv.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    filter: blur(5px);
 }
 
 h1, h2, p {
