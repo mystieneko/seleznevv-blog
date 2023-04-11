@@ -28,6 +28,8 @@ button {
 
 button:hover {
     background-color: #eee;
+    color: #000;
+    border-color: #eee;
 }
 
 .footer {
