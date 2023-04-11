@@ -3,19 +3,22 @@
 
 * {
     font-family: 'Comfortaa', cursive;
-    margin: 0px;
-    padding: 0px;
     background-color: #000;
-    text-align: center;
 }
 body{
     
 }
 
+h1, h2, p {
+    color: #fff;
+}
+
 button {
     padding 10px 18px;
-    background-color: #000 !important;
+    background-color: #ddd !important;
     color: #fff;
+    border: none;
+    border-radius: 5px;
 }
 
 .footer {
