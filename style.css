@@ -5,9 +5,10 @@
     font-family: 'Comfortaa', cursive;
     margin: 0px;
     padding: 0px;
+    background-color: #AFDFFF;
 }
 body{
-    background-color: lightblue;
+    
 }
 
 .footer {
@@ -16,15 +17,14 @@ body{
 
 .main-block {
     color: gray;
-    background-color: aqua;
     text-align: center;
 }
 .news-block {
-    background-color: darkorange;
+    
     display: block;
 }
 .addnews-block {
-    background-color: crimson;
+    
     color: lightgray;
 }
 .about-news{
@@ -34,10 +34,10 @@ body{
     text-align: center;
 }
 .about-site{
-    background-color: yellowgreen;
+    
 }
 .about-maker{
-    background-color: darkkhaki;
+    
     text-align: center;
 }
 .marktext{
