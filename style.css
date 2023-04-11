@@ -3,7 +3,7 @@
 
 * {
     font-family: 'Comfortaa', cursive;
-    background-color: #000;
+    background-color: #999;
 }
 body{
     
@@ -14,8 +14,8 @@ h1, h2, p {
 }
 
 button {
-    padding 10px 18px;
-    background-color: #ddd !important;
+    padding 18px 14px;
+    background-color: #999 !important;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -35,7 +35,6 @@ button {
 }
 .addnews-block {
     
-    color: lightgray;
 }
 .about-news{
     
