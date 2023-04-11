@@ -3,11 +3,10 @@
 
 * {
     font-family: 'Comfortaa', cursive;
-    background-color: #333;
     text-align: center;
 }
 body{
-    
+    background-color: #333;
 }
 
 h1, h2, p {
