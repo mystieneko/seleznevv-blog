@@ -76,11 +76,11 @@ input, input[type="text" i] {
     margin: 10px;
     cursor: pointer;
 }
+
 button:hover, input:hover {
     background-color: #eee;
     color: #000;
     border-color: #eee;
-    cursor: pointer;
 }
 
 .main-block {
