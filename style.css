@@ -62,12 +62,12 @@ button, .footer {
 }
 
 .nuploadbutton:hover {
-    background-color: #5b5b5b;
+    background-color: #999;
 
 input {
     font-size: 18px;
     padding: 8px 18px;
-    border: 2px solid #fff;
+    border: none;
     border-radius: 5px;
     color: #fff;
     background-color: #999;
