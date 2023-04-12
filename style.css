@@ -10,6 +10,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    text-shadow: #000 1px 0 10px;
 }
 
 h1, h2, p {
