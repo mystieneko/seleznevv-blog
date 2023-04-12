@@ -41,6 +41,22 @@ button, .footer {
     cursor: pointer;
 }
 
+.nuploadbutton {
+    font-size: 18px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    background-color: #eee;
+    transition-duration: 0.1s;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.nuploadbutton:hover {
+    background-color: #5b5b5b;
+
 input {
     font-size: 18px;
     padding: 8px 18px;
