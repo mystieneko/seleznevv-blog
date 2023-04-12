@@ -24,6 +24,13 @@ a, a:visited {
     transition-duration: 0.1s;
 }
 
+.newslist {
+    background-color: #999;
+    color: #000;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
 a:hover {
     color: #bcbcbc;
 }
