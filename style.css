@@ -80,6 +80,7 @@ button:hover, input:hover {
     background-color: #eee;
     color: #000;
     border-color: #eee;
+    cursor: pointer;
 }
 
 .main-block {
