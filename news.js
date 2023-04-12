@@ -15,5 +15,5 @@ function clearnews() {
 	alert("Новость успешно удалена.")
 }
 function boom() {
-	document.write("ERROR 404 <br> Сайт не найден! <br> Обновите позже или попробуйте страницу.")
+	document.write("<p style="text-align: center;">404 - Страница не найдена. <br> Зайдите позже или попробуйте обновить страницу.</p>")
 }
