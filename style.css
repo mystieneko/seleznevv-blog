@@ -28,7 +28,7 @@ a:hover {
     color: #bcbcbc;
 }
 
-button, .input, input, .footer {
+button, input, .footer {
     font-size: 18px;
     padding: 8px 18px;
     border: 2px solid #fff;
