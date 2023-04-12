@@ -41,7 +41,7 @@ button, input, .footer {
     cursor: pointer;
 }
 
-button:hover, .input:hover {
+button:hover, input:hover {
     background-color: #eee;
     color: #000;
     border-color: #eee;
