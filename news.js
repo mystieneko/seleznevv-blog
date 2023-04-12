@@ -15,5 +15,5 @@ function clearnews() {
 	alert("Новость успешно удалена.")
 }
 function boom() {
-	document.write("<p style="text-align: center;">404 - Страница не найдена. <br> Зайдите позже или попробуйте обновить страницу.</p>")
+	document.write("<p style="text-align: center; font-size: 18px;">404 - Страница не найдена. <br> Зайдите позже или попробуйте обновить страницу.</p>")
 }
