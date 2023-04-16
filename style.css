@@ -2,7 +2,7 @@
 
 
 * {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     text-align: center;
 }
 body {
@@ -15,12 +15,12 @@ body {
 
 h1, h2, p {
     color: #fff;
-    padding 18px 18px;
+    padding: 8px 18px;
 }
 
 a, a:visited {
     color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
     transition-duration: 0.1s;
 }
 
@@ -77,36 +77,12 @@ button:hover, input:hover {
     border-color: #eee;
 }
 
-.main-block {
-    
-}
 .news-block {
     display: block;
 }
-.addnews-block {
-    
-}
-.about-news{
-    
-}
-.about{
-    
-}
-.about-site{
-    
-}
-.about-maker{
-    
-    
-}
-.marktext{
-    
-}
-.newspaper{
-    
-}
+
 footer{
-    padding: 40px 22.5%;
+    padding: 10px;
     display: inline-block;
     text-shadow: none;
 }
