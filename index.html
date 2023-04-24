@@ -3,9 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type="text/javascript" src="news.js"></script>
-	<link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<script type="text/javascript" src="/script/news.js"></script>
+	<link href="/css/style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="toastr.css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="toastr.js"></script>
 	<title>НашБлог</title>
 </head>
 <body>
@@ -13,40 +19,88 @@
 		<h1>Добро пожаловать на НашБлог!</h1>
 		<h2>Будьте на нашей волне :D</h2>
 	</div>
-	<br>
 	<div class="about-maker">
 		<h2>О создателе сайта</h2>
-		<p>Привет! Я Семен, начинающий разработчик. Уже сейчас могу сделать простенький сайт на html+css+js. Живу в Иркутске, люблю котиков :D Если вы зашли на этот сайт, то либо вы проверяете мою дипломную работу, либо вы просто не знаете куда деть свое время :D Я просто не мог не добавить минутку <s>занимательной</s> информации обо мне! Приятного дня!</p>
+		<p>Привет! Я Семен, начинающий разработчик.
+			 Уже сейчас могу сделать простенький сайт на HTML + CSS + JS.
+			  Живу в Иркутске, люблю котиков :D 
+			  Если вы зашли на этот сайт, то либо вы проверяете мою дипломную работу, либо вы просто не знаете куда деть свое время :D 
+			  Я просто не мог не добавить минутку <s>занимательной</s> информации обо мне! Приятного дня!</p>
 	</div>
-	<br>
         <div class="about-site">
 		<h2 class="about">О сайте</h2>
-		<p>Это блог. Тут можно самому добавить новость. Добавляйте в поле выше и радуйтесь добавленным новостям, а если что-то не понравилось, вы сможете с легкостью удалить и переписать свою новость. Добавление новостей реализованно с помощью localStorage, весь код можно найти на <a href="https://github.com/selezneww/probable-waddle">GitHub</a></p>
+		<p>Это блог. Тут можно самому добавить новость.
+			 Добавляйте в поле выше и радуйтесь добавленным новостям, а если что-то не понравилось, 
+			 вы сможете с легкостью удалить и переписать свою новость.
+			  Добавление новостей реализовано с помощью localStorage, 
+			  весь код можно найти на <a href="https://github.com/4vanyek/seleznevv-blog">GitHub</a></p>
 	</div>
 	<div class="addnews-block">
 		<h2 class="marktext">Желаете поучаствовать в жизни сайта? Оставьте новость!</h2>
-		<form>
-			<input id="text" type="text" name="text" placeholder="новая новость">
-			<button onclick="addnews()" type="button" class="nuploadbutton">Добавить новость</button>
-			<br>
-			<button onclick="clearfield()" type="reset">Очистить поле</button>
-			<button onclick="clearnews()" type="button">Удалить добавленную новость</button>
-		</form>
 	</div>
 	<div class="news-block">
+		<!-- <p class="about-news">Здесь публикуются новости, добавляемые вами на сайте. 
+			Если новости не обновились, нажмите на кнопку "Принудительно обновить". 
+			Можно добавлять любые позитивные новости. 
+			Также предусмотрено их удаление</p> -->
+		<div class="inputfield"><button id="myBtn" class="nuploadbutton"><i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Добавить новость</button><button class="inputbtn" onclick="getnews(); toastr.info('Список обновлён', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-rotate-right"></i>&nbsp;&nbsp;Обновить</button><button class="inputbtn" onclick="clearnews(); toastr.info('Новость удалена', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Удалить</button></div>
+		<div id="myModal" class="modal">
+			<form>
+				<div class="inputfield" style="background-color: #fff;">
+				<div class="modal-header">
+				<span class="close" style="font-size: 40px; color: #000;"><i class="fa-solid fa-xmark fa-2xs"></i>&nbsp;</span>
+				<h2 style="text-align: left !important; margin: 0 !important; padding: 8px 10px !important;"><i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Новая новость</h2>
+				</div>
+				<div style="float: left"><input id="input1" type="text" name="author" class="inputbtn" placeholder="Автор"></input></div>
+				<br><textarea style="text-align: left !important;" id="input2" type="textarea" name="text" width="30px" class="inputbtn; newstext" placeholder="Напишите что-нибудь..."></textarea>
+				<br>
+				<div style="float: right"><button class="inputbtn" value="clear" onclick="clearInput(); toastr.success('Поля очищены', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-eraser"></i>&nbsp;&nbsp;Очистить</button><button style="float: right !important;" onclick="addnews(); getnews(); toastr.success('Новость добавлена!', {positionClass: 'toast-top-center'})" type="button" class="nuploadbutton; closebtn"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Добавить</button></div>
+				</div>
+			</form>
+		</div>
 		<h2 class="newspaper">Новостная лента</h2>
-		<p class="about-news">Здесь публикуются новости, добавляемые вами на сайте. Для обновления нажмите на кнопку ниже. Можно добавлять любые позитивные новости. Также предусмотрено их удаление</p>
-		<br>
-		<p id="news-text" class="newslist"></p>
-		<br>
-		<button onclick="getnews()" type="button">Обновить новостную ленту</button>
+		<div class="newslist" style="padding: 1px !important;"><p style="font-size: 12px" id="news-author"></p><p style="font-size: 20px" id="news-text">— нет новостей —</p></div>
 	</div>
 	<footer>
-		<p>selezneww, 4vanyek | 2023</p>
-		<br>
+		<p><a href="https://github.com/selezneww">selezneww</a>, <a href="https://github.com/4vanyek">4vanyek</a> | 2023</p>
 		<button onclick="boom()" type="button">Сломать весь сайт</button>
+		<br><br><br>
 	</footer>
 
-<!--5c7a92f48c8c20eede0d89af692f913c9d7cb151e02dabed6dd5c9a5bbcd27a4-->
+<script> <!-- needed for modals to work -->
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var closebutton = document.getElementsByClassName("closebtn")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+closebutton.onclick = function() {
+  addnews();
+  getnews();
+  toastr.success('Новость добавлена!', {positionClass: 'toast-top-center'})
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>

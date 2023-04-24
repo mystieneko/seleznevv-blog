@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/css/style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="toastr.css" rel="stylesheet">
+</head>
+<body>
+
+<h2>Animated Modal with Header and Footer</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn"></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <form>
+        <div class="inputfield" style="background-color: #fff;">
+        <div class="modal-header">
+        <span class="close" style="font-size: 40px; color: #000;">&times;&nbsp;</span>
+        <h2 style="text-align: left !important; margin: 0 !important; padding: 8px 10px !important;">Новая новость</h2>
+        </div>
+        <div style="float: left"><input id="author" type="text" name="author" class="inputbtn" placeholder="Автор"></input></div>
+        <br><textarea style="text-align: left !important;" id="text" type="textarea" name="text" class="inputbtn; newstext" placeholder="Напишите что-нибудь..."></textarea>
+        <br>
+        <div style="float: right"><button class="inputbtn" onclick="getnews(); toastr.info('Список обновлён', {positionClass: 'toast-top-center'})" type="button">Обновить</button><button class="inputbtn" onclick="clearnews(); toastr.info('Новость удалена', {positionClass: 'toast-top-center'})" type="button">Удалить</button><button style="float: right !important;" onclick="addnews(); toastr.success('Новость добавлена!', {positionClass: 'toast-top-center'})" type="button" class="nuploadbutton">Добавить</button></div>
+        </div>
+    </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
