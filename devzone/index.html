@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="/toastr.css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="/toastr.js"></script>
+    <title>devzone</title>
+</head>
+<body>
+    <button id="myBtn" class="nuploadbutton"><i class="fa-solid fa-arrow-up-from-bracket"></i>&nbsp;&nbsp;Загрузить файл</button>
+    <div id="myModal" class="modal">
+        <form>
+            <div class="inputfield" style="background-color: #fff;">
+                <div class="modal-header">
+                <span class="close" style="font-size: 40px; color: #000;">&times;&nbsp;</span>
+				<h2 style="text-align: left !important; margin: 0 !important; padding: 8px 10px !important;">Загрузка файлов</h2>
+				</div>
+                <input
+                    class="inputbtn"
+                    type="file"
+                    id="fileElem"
+                    accept="*"
+                    style="display:none" />
+                <button id="fileSelect" class="uploadbtn" type="button"><i class="fa-solid fa-arrow-up-from-bracket"></i>&nbsp;&nbsp;Загрузить</button>
+
+				<br><textarea style="text-align: left !important;" id="input2" type="textarea" name="text" width="30px" class="inputbtn; newstext" placeholder="Напишите что-нибудь..."></textarea>
+				<br>
+				<div style="float: right"><button class="inputbtn" value="clear" onclick="clearInput(); toastr.success('Поля очищены', {positionClass: 'toast-top-center'})" type="button">Очистить</button><input type="submit" style="float: right !important;" onclick="toastr.success('Файл загружен', {positionClass: 'toast-top-center'})" class="nuploadbutton" value="Загрузить"></input></div>
+			</div>
+        </form>
+    </div>
+    <script>
+        const fileSelect = document.getElementById("fileSelect");
+        const fileElem = document.getElementById("fileElem");
+
+        fileSelect.addEventListener(
+        "click",
+        (e) => {
+            if (fileElem) {
+            fileElem.click();
+            }
+        },
+        false
+        );
+
+
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var closebutton = document.getElementsByClassName("closebtn")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+closebutton.onclick = function() {
+  addnews();
+  getnews();
+  toastr.success('Новость добавлена!', {positionClass: 'toast-top-center'})
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+</body>
+</html>
