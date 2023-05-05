@@ -1,4 +1,4 @@
-# seleznevv-blog: edge
+# seleznevv-blog
 # Обновления
 За всеми обновлениями можно следить на [моём YouTube канале](https://youtube.com/@therealvanyek8175), я иногда провожу стримы (около 3-4 раз в неделю)
 ## Описание
