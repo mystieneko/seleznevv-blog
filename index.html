@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="script/news.js"></script>
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/tabs.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
@@ -19,7 +20,44 @@
 		<h1>Добро пожаловать на НашБлог!</h1>
 		<h2>Будьте на нашей волне :D</h2>
 	</div>
-	<div class="about-maker">
+	<div class="pc-tab">
+<input checked="checked" id="tab1" type="radio" name="pct" />
+<input id="tab2" type="radio" name="pct" />
+<input id="tab3" type="radio" name="pct" />
+  <nav>
+    <ul>
+      <li class="tab1">
+        <label for="tab1">О проекте</label>
+      </li>
+      <li class="tab2">
+        <label for="tab2">О создателях</label>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <div class="tab1">
+      <h2>НашБлог</h2>
+      <p>Этот проект был создан человеком под ником <a href="https://github.com/selezneww" target="_blank">selezneww</a> и задумывался как микроблог, где любой желающий может создать свою новость.</p>
+      <h2>О форке</h2>
+      <p>Проект продолжил человек <a href="https://github.com/4vanyek" target="_blank">4vanyek</a>, так как в оригинальном проекте слишком много ошибок и кривого дизайна. На данный момент планируется:</p>
+      <ol>
+      	<li>Добавить возможность сохранять новости на сервер в базу данных</li>
+      	<li>Сделать так, чтобы можно было вставлять ссылки в текст/имя автора</li>
+      	</ol>
+    </div>
+    <div class="tab2">
+      <h2>О selezneww</h2>
+      <p>Привет! Я Семен, начинающий разработчик.
+			 Уже сейчас могу сделать простенький сайт на HTML + CSS + JS.
+			  Живу в Иркутске, люблю котиков :D 
+			  Если вы зашли на этот сайт, то либо вы проверяете мою дипломную работу, либо вы просто не знаете куда деть свое время :D 
+			  Я просто не мог не добавить минутку <s>занимательной</s> информации обо мне! Приятного дня!</p>
+      <h2>О 4vanyek</h2>
+      <p>Зовут Иван, умею в HTML, CSS + немного JS. В данный момент работаю над несколькими проектами кроме этого: сайтом <a href="https://github.com/4vanyek/therealvanyek-ml/">therealvanyek</a> и <a href="https://github.com/4vanyek/rvfiles-src/">RVFILES</a></p>
+    </div>
+  </section>
+</div>
+	<!--div class="about-maker">
 		<h2>О создателе сайта</h2>
 		<p>Привет! Я Семен, начинающий разработчик.
 			 Уже сейчас могу сделать простенький сайт на HTML + CSS + JS.
@@ -34,7 +72,7 @@
 			 вы сможете с легкостью удалить и переписать свою новость.
 			  Добавление новостей реализовано с помощью localStorage, 
 			  весь код можно найти на <a href="https://github.com/4vanyek/seleznevv-blog">GitHub</a></p>
-	</div>
+	</div-->
 	<div class="addnews-block">
 		<h2 class="marktext">Желаете поучаствовать в жизни сайта? Оставьте новость!</h2>
 	</div>
