@@ -6,13 +6,14 @@
 }
 body {
     background: #f3faff;
-    text-align: center;
 }
 
 h1, h2, p {
     color: #34495e;
 }
-
+#textcenter, #textcenter>a, #textcenter>button {
+    text-align: center;
+}
 a {
     position:relative;
     text-decoration:none;
@@ -26,7 +27,6 @@ a::before {
     height:3px;
     border-radius:4px;
     background-color:#000;
-    font-weight: bold;
     bottom:0;
     left:0;
     transform-origin:right;
@@ -53,20 +53,6 @@ a:visited {
 a:hover {
     color: #505050;
 }
-
-input[type="file"] {
-    float: left;
-    font-size: 18px;
-    padding: 8px 18px;
-    border: 2px solid #c9e6fd;
-    border-radius: 5px;
-    /* color: #008cff; */
-    background-color: #ffffffea;
-    transition-duration: 0.1s;
-    /*  margin: 5px; */
-    text-shadow: none;
-    width: 250px;
-}
 button {
     font-size: 18px;
     padding: 8px 18px;
@@ -81,20 +67,30 @@ button {
 }
 
 .inputfield {
-    display:inline-block;
+    /*display:inline-block;*/
     font-size: 18px;
-    border: 2px solid #c9e6fd;
+    background-color: #c9e6fd;
     border-radius: 5px;
     padding: 8px 10px;
-    margin: 0;
+    margin: auto;
+    width: 45%;
     /* color: #008cff; */
 }
 
+.inputfield > .nuploadbutton, .inputfield > button {
+    border: none;
+}
+.modal-content > button {
+    margin: 0;  
+}
+.modal > button {
+    float: right;
+}
+
 input, textarea {
-    width: 90%;
+    width: 100%;
     font-size: 18px;
     padding: 8px 10px;
-    border: none;
     border: 2px solid #c9e6fd;
     border-radius: 5px; 
     /* color: #008cff; */
@@ -103,15 +99,12 @@ input, textarea {
     margin: 5px;
     text-shadow: none;
     text-align: left;
+    float: left;
 }
 
 button:hover, input:hover, textarea:hover {
     background-color: #e2e2e2;
     border-color: #008cff;
-}
-
-input[type="file"] {
-    cursor: pointer;
 }
 
 .uploadbtn {
@@ -122,24 +115,29 @@ input[type="file"] {
     padding: 8px 18px;
     border: 2px solid #008cff;
     border-radius: 5px;
-    color: #fff;
-    background-color: #008cff;
+    color: #000;
+    background-color: transparent;
     transition-duration: 0.1s;
     /*margin: 5px;*/
 }
 
-button:active, input:active, input:checked, input:focus {
+button:active {
     background-color: #cecece;
 }
 
-textarea:active, textarea:focus {
+textarea:active, textarea:focus, input:active, input:focus {
     background-color: #cecece;
     border-color: transparent;
 }
 
-.nuploadbutton:hover, .closebtn:hover {
+.nuploadbutton:hover, .closebtn:hover, .nuploadbutton:active, .nuploadbutton:focus, .closebtn:active, .closebtn:focus {
     background-color: #0172ce;
     border-color: #0172ce;
+    color: #fff;
+}
+.nuploadbutton:active, .nuploadbutton:focus {
+    background-color: #0060af;
+    border-color: #0060af;
 }
 
 .news-block {
@@ -154,9 +152,9 @@ textarea:active, textarea:focus {
     border-radius: 5px;
 }
 
-footer {
+/*.footer {
     display: inline-block;
-}
+}*/
 
 /* style for modals */
 
@@ -184,10 +182,9 @@ footer {
     position: relative;
     background-color: #fefefe;
     margin: auto;
-    padding: 0;
-    border: 2px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -228,34 +225,74 @@ footer {
     text-decoration: none;
     cursor: pointer;
   }
-
+/*.mobile {
+    display: none;
+}
+.nonmobile {
+    display: block;
+}*/
 /* media queries go here */
 @media screen and (max-width: 700px) {
+    /*.nonmobile {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }*/
+    .modal-content h2 {
+        font-size: 20px;
+    }
 	.modal-content {
 		padding: 10px;
+        width: 80%;
+        height: 50%;
+        box-sizing: border-box;
 		}
+    .modal-content button, .modal-content .nuploadbutton {
+        font-size: 16px;
+        width: 45%;
+        display: flexbox;
+        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 	textarea, input {
 		width: 97%; 
 		box-sizing: border-box;
-		padding: 8px 10px;
+		/*padding: 8px 10px;*/
 		}
-	.inputfield {
+	/*.inputfield {
 		max-width: 95%;
 		align-items: left;
         justify-content: left;
 		}
+    }*/
+}
+@media screen and (max-width: 800px) {
+    .modal-content {
+		padding: 10px;
+        width: 80%;
+        height: 50%;
+        box-sizing: border-box;
+        border-radius: 5px;
+		}
+    .modal {
+        border-radius: 5px;
     }
-/* @media screen and (max-width: 700px) {
-    .modal, .inputfield, form, .inputbtn {
-        max-width: 99%;
-        max-height: 99%;
-        align-items: center;
+    .modal-content button {
+        /*font-size: 16px;*/
+        width: 20%;
+        /*float: right;*/
+        display: flexbox;
+        text-align: center;
+        flex-direction: row;
+        align-items:center;
         justify-content: center;
     }
-    textarea {
-    	text-align: left;
-    	max-width: 65% !important;
-    	align-items: left;
-    	justify-content: left;
-    }
-} */
+	textarea {
+		width: 98.5%; 
+		box-sizing: border-box;
+		/*padding: 8px 10px;*/
+		}
+}

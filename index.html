@@ -16,7 +16,7 @@
 	<title>НашБлог</title>
 </head>
 <body>
-	<div class="main-block">
+	<div class="main-block" id="textcenter">
 		<h1>Добро пожаловать на НашБлог!</h1>
 		<h2>Будьте на нашей волне :D</h2>
 	</div>
@@ -73,7 +73,7 @@
 			  Добавление новостей реализовано с помощью localStorage, 
 			  весь код можно найти на <a href="https://github.com/4vanyek/seleznevv-blog">GitHub</a></p>
 	</div-->
-	<div class="addnews-block">
+	<div class="addnews-block" id="textcenter">
 		<h2 class="marktext">Желаете поучаствовать в жизни сайта? Оставьте новость!</h2>
 	</div>
 	<div class="news-block">
@@ -81,29 +81,32 @@
 			Если новости не обновились, нажмите на кнопку "Принудительно обновить". 
 			Можно добавлять любые позитивные новости. 
 			Также предусмотрено их удаление</p> -->
-		<div class="inputfield"><button id="myBtn" class="nuploadbutton"><i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Добавить новость</button><button class="inputbtn" onclick="getnews(); toastr.info('Список обновлён', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-rotate-right"></i>&nbsp;&nbsp;Обновить</button><button class="inputbtn" onclick="clearnews(); toastr.info('Новость удалена', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Удалить</button></div>
+		<div class="inputfield" id="textcenter"><button id="myBtn" class="nuploadbutton"><i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Добавить новость</button><button class="inputbtn" onclick="getnews(); toastr.info('Список обновлён', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-rotate-right"></i>&nbsp;&nbsp;Обновить</button><button class="inputbtn" onclick="clearnews(); toastr.info('Новость удалена', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Удалить</button></div>
 		<div id="myModal" class="modal">
+			<div class="modal-content">
 			<form>
-				<div class="inputfield" style="background-color: #fff;">
+				<div style="background-color: #fff;">
 				<div class="modal-header">
-				<span class="close" style="font-size: 40px; color: #000;"><i class="fa-solid fa-xmark fa-2xs"></i>&nbsp;</span>
+				<span class="close" style="font-size: 40px;"><i class="fa-solid fa-xmark fa-2xs">&nbsp;</i></span>
 				<h2 style="text-align: left !important; margin: 0 !important; padding: 8px 10px !important;"><i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Новая новость</h2>
 				</div>
-				<div style="float: left"><input id="input1" type="text" name="author" class="inputbtn" placeholder="Автор"></input></div>
+				<div style="float: left"><input id="input1" type="text" name="author" class="inputbtn" placeholder="Автор новости"></input></div>
 				<br><textarea style="text-align: left !important;" id="input2" type="textarea" name="text" width="30px" class="inputbtn; newstext" placeholder="Напишите что-нибудь..."></textarea>
 				<br>
-				<div style="float: right"><button class="inputbtn" value="clear" onclick="clearInput(); toastr.success('Поля очищены', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-eraser"></i>&nbsp;&nbsp;Очистить</button><button style="float: right !important;" onclick="addnews(); getnews(); toastr.success('Новость добавлена!', {positionClass: 'toast-top-center'})" type="button" class="nuploadbutton; closebtn"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Добавить</button></div>
+				<div><button class="inputbtn" value="clear" onclick="clearInput(); toastr.success('Поля очищены', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-eraser"></i>&nbsp;&nbsp;Очистить</button><button style="float: right !important;" onclick="addnews(); getnews(); toastr.success('Новость добавлена!', {positionClass: 'toast-top-center'})" type="button" class="nuploadbutton; closebtn"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Добавить</button></div>
 				</div>
-			</form>
+				<!--div class="mobile"><button class="inputbtn" value="clear" onclick="clearInput(); toastr.success('Поля очищены', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-eraser fa-2xs"></i>Очистить</button><button style="float: right !important;" onclick="addnews(); getnews(); toastr.success('Новость добавлена!', {positionClass: 'toast-top-center'})" type="button" class="nuploadbutton; closebtn"><i class="fa-solid fa-plus fa-2xs"></i>Добавить</button></div>
+				</div-->
+			</form></div>
 		</div>
-		<h2 class="newspaper">Новостная лента</h2>
-		<div class="newslist" style="padding: 1px !important;"><p style="font-size: 12px" id="news-author"></p><p style="font-size: 20px" id="news-text">— нет новостей —</p></div>
+		<h2 class="newspaper" id="textcenter">Новостная лента</h2>
+		<div class="newslist" style="padding: 1px !important;" id="textcenter"><p style="font-size: 12px" id="news-author"></p><p style="font-size: 20px" id="news-text">— нет новостей —</p></div>
 	</div>
-	<footer>
+	<div class="footer" id="textcenter">
 		<p><a href="https://github.com/selezneww">selezneww</a>, <a href="https://github.com/4vanyek">4vanyek</a> | 2023</p>
 		<button onclick="boom()" type="button">Сломать весь сайт</button>
 		<br><br><br>
-	</footer>
+	</div>
 
 <script> <!-- needed for modals to work -->
 // Get the modal
