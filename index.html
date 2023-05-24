@@ -10,9 +10,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<link href="toastr.css" rel="stylesheet">
-	<!--script src="//code.jquery.com/jquery.min.js"></script-->
-	<script src="toastr.js"></script>
 	<title>НашБлог</title>
 </head>
 <body>
@@ -81,7 +78,16 @@
 			Если новости не обновились, нажмите на кнопку "Принудительно обновить". 
 			Можно добавлять любые позитивные новости. 
 			Также предусмотрено их удаление</p> -->
-		<div class="inputfield" id="textcenter"><button id="myBtn" class="nuploadbutton"><i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Добавить новость</button><button class="inputbtn" onclick="getnews(); toastr.info('Список обновлён', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-rotate-right"></i>&nbsp;&nbsp;Обновить</button><button class="inputbtn" onclick="clearnews(); toastr.info('Новость удалена', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Удалить</button></div>
+		<div class="inputfield" id="textcenter">
+			<button id="myBtn" class="nuploadbutton">
+				<i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Добавить новость
+			</button>
+			<button class="inputbtn" onclick="getnews(); toastr.info('Список обновлён', {positionClass: 'toast-top-center'})" type="button">
+				<i class="fa-solid fa-rotate-right"></i>&nbsp;&nbsp;Обновить
+			</button>
+			<button class="inputbtn" onclick="clearnews(); toastr.info('Новость удалена', {positionClass: 'toast-top-center'})" type="button">
+				<i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Удалить
+			</button></div>
 		<div id="myModal" class="modal">
 			<div class="modal-content">
 			<form>
@@ -90,8 +96,8 @@
 				<span class="close" style="font-size: 40px;"><i class="fa-solid fa-xmark fa-2xs">&nbsp;</i></span>
 				<h2 style="text-align: left !important; margin: 0 !important; padding: 8px 10px !important;"><i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Новая новость</h2>
 				</div>
-				<div style="float: left"><input id="input1" type="text" name="author" class="inputbtn" placeholder="Автор новости"></input></div>
-				<br><textarea style="text-align: left !important;" id="input2" type="textarea" name="text" width="30px" class="inputbtn; newstext" placeholder="Напишите что-нибудь..."></textarea>
+				<div><input id="input1" type="text" name="author" class="inputbtn" placeholder="Автор новости" style="width: 50%;"></input></div>
+				<textarea style="text-align: left !important;" id="input2" type="textarea" name="text" width="30px" class="inputbtn; newstext" placeholder="Напишите что-нибудь..."></textarea>
 				<br>
 				<button class="inputbtn" value="clear" onclick="clearInput(); toastr.success('Поля очищены', {positionClass: 'toast-top-center'})" type="button"><i class="fa-solid fa-eraser"></i>&nbsp;&nbsp;Очистить</button><button style="float: right !important;" onclick="addnews(); getnews(); toastr.success('Новость добавлена!', {positionClass: 'toast-top-center'})" type="button" class="nuploadbutton; closebtn"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Добавить</button>
 				</div>

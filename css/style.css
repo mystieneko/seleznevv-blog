@@ -56,9 +56,11 @@ a:hover {
 button {
     font-size: 18px;
     padding: 8px 18px;
-    border: 1px solid transparent;
+    /*border: 1px solid transparent;*/
+    border: none;
     border-radius: 5px;
-    /* color: #008cff; */
+    /*color: #ddd;*/
+    margin: 5px 0 5px 0;
     background-color: #ffffffea;
     transition-duration: 0.1s;
     text-shadow: none;
@@ -90,15 +92,15 @@ input, textarea {
     width: 100%;
     font-size: 18px;
     padding: 8px 10px;
-    border: 2px solid #c9e6fd;
+    border: none;
     border-radius: 5px; 
     /* color: #008cff; */
-    background-color: #ffffffea;
+    background-color: #f1f1f1;
     transition-duration: 0.1s;
-    margin: 5px;
+    /*margin: 5px;*/
     text-shadow: none;
     text-align: left;
-    float: left;
+    /*float: left;*/
 }
 
 button:hover, input:hover, textarea:hover {
