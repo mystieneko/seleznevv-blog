@@ -6,6 +6,7 @@
 	<script type="text/javascript" src="script/news.js"></script>
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/tabs.css" rel="stylesheet">
+	<link href="css/mobile.css" rel="stylesheet">
 	<link href="css/snackbar.css" rel="stylesheet">
 	<script src="script/snackbar.js"></script>
 	<script defer src="script/modals.js"></script>
@@ -95,22 +96,19 @@
 			<button id="myBtn" class="nuploadbutton">
 				<i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Добавить новость
 			</button>
-			<button class="inputbtn" onclick="getnews(); showToast()" type="button">
+			<button class="inputbtn" onclick="getnews(); showToast()">
 				<i class="fa-solid fa-rotate-right"></i>&nbsp;&nbsp;Обновить
 			</button>
-			<button class="inputbtn" onclick="clearnews(); showToast()" type="button">
+			<button class="inputbtn" onclick="clearnews(); showToast()">
 				<i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Удалить
 			</button></div>
 		<div id="myModal" class="modal">
 			<div class="modal-content">
-			<form>
 				<div style="background-color: #fff;">
 				<div class="modal-header">
-				<span class="close" style="font-size: 40px;">
-					<i class="fa-solid fa-xmark fa-2xs">&nbsp;</i>
-				</span>
-				<h2 style="text-align: left !important; margin: 0 !important; padding: 8px 10px !important;">
-					<i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Новая новость</h2>
+				<h2 style="margin: 0 !important; padding: 8px 10px !important;">
+					<i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Новая новость
+					<i class="close fa-solid fa-xmark"></i></h2> 
 				</div>
 				<div><input id="input1" type="text" name="author" class="inputbtn" placeholder="Автор новости" style="width: 50%;"></input></div>
 				<textarea style="text-align: left !important;" id="input2" type="textarea" name="text" width="30px" class="inputbtn; newstext" placeholder="Напишите что-нибудь..."></textarea>
@@ -123,7 +121,7 @@
 					<i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Добавить
 				</button>
 				</div>
-			</form></div>
+			</div>
 		</div><br>
 		<div id="snackbar">Выполнено!</div>
 		<h2 class="newspaper" id="textcenter">Новостная лента</h2>
