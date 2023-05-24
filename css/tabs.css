@@ -50,7 +50,6 @@ body {
   float: left;
   display: block !important;
   padding: 12px;
-  border: 2px solid #c9e6fd;
   border-radius: 5px;
   border-bottom: 0;
   background: #eeeeee;
@@ -74,7 +73,6 @@ body {
 .pc-tab section div {
   padding: 20px;
   width: 100%;
-  border: 2px solid #c9e6fd;
   border-radius: 5px;
   border-top: 0;
   background: #fff;
