@@ -1,0 +1,44 @@
+/*.dropbtn {
+    cursor:default;
+}*/
+.change-icon > .fach + .fach,
+.change-icon:hover > .fach {
+  display: none;
+}
+.change-icon:hover > .fach + .fach {
+  display: inherit;
+}
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+    display: none;
+    /*position: absolute;*/
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content button {
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    text-align: left;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content button:hover {background-color: #ddd;}
+  
+  /* Показать выпадающее меню при наведении курсора */
+  .dropdown:hover .dropdown-content {display: block;}
+  
