@@ -8,11 +8,22 @@ body {
     background: #f3faff;
 }
 
-h1, h2, p {
+p {
     color: #34495e;
+}
+h1, h2 {
+    color: #34495e;
+    margin: 12px;
 }
 #textcenter, #textcenter>a, #textcenter>button {
     text-align: center;
+}
+.newslist {
+    background-color: #b1dbfd;
+    color: #000;
+    padding: 1px;
+    margin: 40px;
+    border-radius: 5px;
 }
 a {
     position:relative;
@@ -41,15 +52,6 @@ a:hover::before {
 a:visited {
     color: #242424;
 }
-
-.newslist {
-    background-color: #b1dbfd;
-    color: #000;
-    padding: 1px;
-    margin: 40px;
-    border-radius: 5px;
-}
-
 a:hover {
     color: #505050;
 }
