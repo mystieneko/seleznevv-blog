@@ -17,12 +17,13 @@
   /* Выпадающее содержимое (скрыто по умолчанию) */
   .dropdown-content {
     display: none;
-    position: absolute;
+    /*position: absolute;*/
     background-color: #f1f1f1;
     border-radius: 5px;
-    min-width: fit-content;
+    width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-top: 10px solid transparent;
   }
   
   /* Ссылки внутри выпадающего списка */
@@ -30,10 +31,10 @@
     padding: 12px 14px;
     text-decoration: none;
     display: block;
-    width: max-content;
-    text-align: left;
+    width: 100%;
     border: none;
     background: transparent;
+    text-align: left;
   }
   
   /* Изменение цвета выпадающих ссылок при наведении курсора */

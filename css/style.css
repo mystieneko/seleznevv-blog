@@ -61,7 +61,6 @@ button {
     /* color: #008cff; */
     background-color: #ffffffea;
     transition-duration: 0.1s;
-    margin: 5px;
     text-shadow: none;
     cursor: pointer;
 }
