@@ -1,0 +1,45 @@
+:root {
+  --bg: #f3faff;
+  --text: #34495e;
+  --p-text: #34495e;
+  --p2-text: #111;
+  --p2-text-checked: #000;
+  --tabs-bg: #eee;
+  --tabs-bg2: #fff;
+  --modal-bg: #fefefe;
+  --tabs-hover: #ddd;
+  --tabs-active: #fff;
+  --news-bg: #c9e6fd;
+  --a: #000;
+  --a-hover: #505050;
+  --btn-bg: #ffffffea;
+  --btn-bg-hover: #e2e2e2;
+  --btn-color: #000;
+  --input-bg: #f1f1f1;
+  --input-bg-hover: #e2e2e2;
+  --input-bg-active: #cecece;
+  --input-color: #333;
+  /* or any other variables/style */
+}
+[data-theme='dark'] {
+  --bg: #222;
+  --btn-bg: #333333ea;
+  --btn-bg-hover: #555;
+  --btn-color: #fff;
+  --tabs-bg: #333;
+  --tabs-bg2: #333;
+  --modal-bg: #444;
+  --tabs-hover: #3b3b3b;
+  --tabs-active: #444; 
+  --text: #eee;
+  --p-text: #ddd;
+  --p2-text: #ddd;
+  --p2-text-checked: #fff;
+  --news-bg: #4c5d6c;
+  --a: #ddd;
+  --a-hover: #bbb; 
+  --input-bg: #333;
+  --input-bg-hover: #222;
+  --input-bg-active: #1d1d1d;
+  --input-color: #eee;
+}

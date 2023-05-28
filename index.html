@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="script/news.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/tabs.css" rel="stylesheet">
 	<link href="css/mobile.css" rel="stylesheet">
 	<link href="css/snackbar.css" rel="stylesheet">
+	<link href="css/themeswitch.css" rel="stylesheet">
 	<script src="script/snackbar.js"></script>
 	<script defer src="script/modals.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,7 +74,7 @@
 		<h2 class="marktext">Желаете поучаствовать в жизни сайта? Оставьте новость!</h2>
 	</div>
 	<div class="news-block">
-		<p class="about-news" id="textcenter">Здесь публикуются новости, добавляемые вами на сайте.
+		<p class="about-news" style="color: var(--p-text);" id="textcenter">Здесь публикуются новости, добавляемые вами на сайте.
 			Можно добавлять любые новости (но здравый смысл должен быть). 
 			Также предусмотрено их удаление</p>
 		<div class="inputfield" id="textcenter">
@@ -87,7 +89,7 @@
 			</button></div>
 		<div id="myModal" class="modal">
 			<div class="modal-content">
-				<div style="background-color: #fff;">
+				<div>
 				<div class="modal-header">
 				<h2 style="margin: 0 !important; padding: 8px 10px !important;">
 					<i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Новая новость
@@ -111,8 +113,9 @@
 		<div class="newslist" id="textcenter"><p style="font-size: 12px" id="news-author"></p><p style="font-size: 20px" id="news-text">— нет новостей —</p></div>
 	</div>
 	<div class="footer" id="textcenter">
-		<p><a href="https://github.com/selezneww">selezneww</a>, <a href="https://github.com/4vanyek">4vanyek</a> | 2023</p>
+		<p style="color: var(--p-text);"><a href="https://github.com/selezneww">selezneww</a>, <a href="https://github.com/4vanyek">4vanyek</a> | 2023</p>
 		<button onclick="boom()" type="button">Сломать весь сайт</button>
+		<button data-toggle-theme="dark,light" data-act-class="ACTIVECLASS">Тема</button>
 		<br><br><br>
 	</div>
 </body>

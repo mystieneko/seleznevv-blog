@@ -1,6 +1,6 @@
 .pc-tab > input,
 .pc-tab section > div {
-  display: none;
+	display: none;
   transition-duration: 0.2s;
 }
 
@@ -52,17 +52,17 @@ body {
   padding: 12px;
   border-radius: 5px;
   border-bottom: 0;
-  background: #eeeeee;
-  color: #444;
+  background: var(--tabs-bg);
+  color: var(--p2-text);
   cursor: pointer;
   transition-duration: 0.2s;
 }
 .pc-tab ul li label:hover {
-  background: #dddddd;
+  background: var(--tabs-hover);
   transition-duration: 0.1s;
 }
 .pc-tab ul li label:active {
-  background: #ffffff;
+  background: var(--tabs-active);
 }
 .pc-tab ul li:not(:last-child) label {
   border-right-width: 0;
@@ -75,20 +75,20 @@ body {
   width: 100%;
   border-radius: 5px;
   border-top: 0;
-  background: #fff;
-  color: #444;
+  background: var(--tabs-bg2);
+  color: var(--p2-text);
   transition-duration: 0.2s;
 }
 .pc-tab section div h2 {
   margin: 0;
-  color: #34495e;
+  /*color: #34495e;*/
 }
 
 #tab1:checked ~ nav .tab1 label,
 #tab2:checked ~ nav .tab2 label,
 #tab3:checked ~ nav .tab3 label {
-  background: white;
-  color: #111;
+  background: var(--tabs-bg);
+  color: var(--p2-text-checked);
   position: relative;
 }
 #tab1:checked ~ nav .tab1 label:after,
@@ -100,7 +100,7 @@ body {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #ffffff;
+  background: var(--tabs-bg2);
   left: 0;
   bottom: -1px;
 }

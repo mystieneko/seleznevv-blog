@@ -5,22 +5,22 @@
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 body {
-    background: #f3faff;
+    background-color: var(--bg);
 }
 
-p {
-    color: #34495e;
+p > body {
+    color: var(--p-text);
 }
 h1, h2 {
-    color: #34495e;
+    color: var(--text);
     margin: 12px;
 }
 #textcenter, #textcenter>a, #textcenter>button {
     text-align: center;
 }
 .newslist {
-    background-color: #b1dbfd;
-    color: #000;
+    background-color: var(--news-bg);
+    color: var(--p-text);
     padding: 1px;
     margin: 40px;
     border-radius: 5px;
@@ -29,7 +29,7 @@ a {
     position:relative;
     text-decoration:none;
     font-weight: bold;
-    color: #000;
+    color: var(--a);
 }
 a::before {
     content:'';
@@ -37,7 +37,7 @@ a::before {
     width:100%;
     height:3px;
     border-radius:4px;
-    background-color:#000;
+    background-color:var(--a);
     bottom:0;
     left:0;
     transform-origin:right;
@@ -50,10 +50,10 @@ a:hover::before {
 }
 
 a:visited {
-    color: #242424;
+    color: var(--a);
 }
 a:hover {
-    color: #505050;
+    color: var(--a-hover);
 }
 button {
     font-size: 18px;
@@ -61,9 +61,9 @@ button {
     /*border: 1px solid transparent;*/
     border: none;
     border-radius: 5px;
-    /*color: #ddd;*/
+    color: var(--btn-color);
     margin: 5px 0 5px 0;
-    background-color: #ffffffea;
+    background-color: var(--btn-bg);
     transition-duration: 0.1s;
     text-shadow: none;
     cursor: pointer;
@@ -72,7 +72,7 @@ button {
 .inputfield {
     /*display:inline-block;*/
     font-size: 18px;
-    background-color: #c9e6fd;
+    background-color: var(--news-bg);
     border-radius: 5px;
     padding: 8px 10px;
     margin: auto;
@@ -96,8 +96,8 @@ input, textarea {
     padding: 8px 10px;
     border: none;
     border-radius: 5px; 
-    /* color: #008cff; */
-    background-color: #f1f1f1;
+    color: var(--input-color);
+    background-color: var(--input-bg);
     transition-duration: 0.1s;
     /*margin: 5px;*/
     text-shadow: none;
@@ -105,11 +105,13 @@ input, textarea {
     /*float: left;*/
 }
 
-button:hover, input:hover, textarea:hover {
-    background-color: #e2e2e2;
-    border-color: #222;
+button:hover {
+    background-color: var(--btn-bg-hover);
+    /*border-color: #222;*/
 }
-
+input:hover, textarea:hover {
+	background-color: var(--input-bg-hover);
+	}
 .uploadbtn {
     float: left;
 }
@@ -124,11 +126,11 @@ button:hover, input:hover, textarea:hover {
 }
 
 button:active {
-    background-color: #cecece;
+    background-color: var(--btn-bg-hover);
 }
 
 textarea:active, textarea:focus, input:active, input:focus {
-    background-color: #cecece;
+    background-color: var(--input-bg-active);
     border-color: transparent;
 }
 
@@ -182,7 +184,7 @@ textarea:active, textarea:focus, input:active, input:focus {
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: var(--modal-bg);
     margin: auto;
     padding: 20px;
     border-radius: 5px;
