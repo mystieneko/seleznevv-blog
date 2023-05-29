@@ -1,20 +1,20 @@
 :root {
   --bg: #f3faff;
-  --text: #34495e;
-  --p-text: #34495e;
-  --p2-text: #111;
+  --h-text: #000;
+  --p-text: #000;
+  --p2-text: #000;
   --p2-text-checked: #000;
   --tabs-bg: #eee;
-  --tabs-bg2: #fff;
+  --tabs-bg2: #dad9d9;
   --modal-bg: #fefefe;
   --tabs-hover: #ddd;
   --tabs-active: #fff;
-  --news-bg: #c9e6fd;
+  --news-bg: #241538;
   --a: #000;
   --a-hover: #505050;
-  --btn-bg: #ffffffea;
+  --btn-bg: #241538;
   --btn-bg-hover: #e2e2e2;
-  --btn-color: #000;
+  --btn-color: #fff;
   --input-bg: #f1f1f1;
   --input-bg-hover: #e2e2e2;
   --input-bg-active: #cecece;

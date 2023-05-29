@@ -12,7 +12,7 @@ p > body {
     color: var(--p-text);
 }
 h1, h2 {
-    color: var(--text);
+    color: var(--h-text);
     margin: 12px;
 }
 #textcenter, #textcenter>a, #textcenter>button {
@@ -57,14 +57,14 @@ a:hover {
 }
 button {
     font-size: 18px;
-    padding: 8px 18px;
+    padding: 0.6em 1.2em;
     /*border: 1px solid transparent;*/
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     color: var(--btn-color);
     margin: 5px 0 5px 0;
     background-color: var(--btn-bg);
-    transition-duration: 0.1s;
+    transition: transform 150ms ease-out;
     text-shadow: none;
     cursor: pointer;
 }
@@ -106,8 +106,7 @@ input, textarea {
 }
 
 button:hover {
-    background-color: var(--btn-bg-hover);
-    /*border-color: #222;*/
+    transform: scale(0.97, 0.97);
 }
 input:hover, textarea:hover {
 	background-color: var(--input-bg-hover);
@@ -117,16 +116,14 @@ input:hover, textarea:hover {
 }
 .nuploadbutton, .closebtn {
     font-size: 18px;
-    padding: 8px 18px;
-    border-radius: 5px;
+    border-radius: 6px;
     color: #fff;
-    background-color: #008cff;
-    transition-duration: 0.1s;
+    background-color: #6f47cd;
     /*margin: 5px;*/
 }
 
-button:active {
-    background-color: var(--btn-bg-hover);
+button:active, .nuploadbutton:hover, .closebtn:hover, .nuploadbutton:active, .nuploadbutton:focus, .closebtn:active, .closebtn:focus {
+    transform: scale(0.9, 0.9);
 }
 
 textarea:active, textarea:focus, input:active, input:focus {
@@ -134,11 +131,11 @@ textarea:active, textarea:focus, input:active, input:focus {
     border-color: transparent;
 }
 
-.nuploadbutton:hover, .closebtn:hover, .nuploadbutton:active, .nuploadbutton:focus, .closebtn:active, .closebtn:focus {
+/* {
     background-color: #0172ce;
     border-color: #0172ce;
     color: #fff;
-}
+}*/
 .nuploadbutton:active, .nuploadbutton:focus {
     background-color: #0060af;
     border-color: #0060af;
