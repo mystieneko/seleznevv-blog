@@ -1,36 +1,36 @@
 function addnews(){
-	var inputText= document.getElementById("input2");
-	var inputAuthor= document.getElementById("input1");
-	localStorage.setItem("input2", inputText.value);
-	localStorage.setItem("input1", inputAuthor.value);
+	var inputText= document.getElementById("text");
+	var inputAuthor= document.getElementById("author");
+	localStorage.setItem("text", inputText.value);
+	localStorage.setItem("author", inputAuthor.value);
 	const newsText = document.getElementById('news-text');
 	const newsAuthor = document.getElementById('news-author');
-	newsText.innerText = localStorage.getItem("input2");
-	newsAuthor.innerText = localStorage.getItem("input1");
+	newsText.innerText = localStorage.getItem("text");
+	newsAuthor.innerText = localStorage.getItem("author");
    }
 function getnews() {
 	const newsText = document.getElementById('news-text');
 	const newsAuthor = document.getElementById('news-author');
-	newsText.innerText = localStorage.getItem("input2");
-	newsAuthor.innerText = localStorage.getItem("input1");
+	newsText.innerText = localStorage.getItem("text");
+	newsAuthor.innerText = localStorage.getItem("author");
 }
 function clearInput(){
-	var getValue = document.getElementById("input1");
+	var getValue = document.getElementById("author");
 	  if (getValue.value !="") {
 		  getValue.value = "";
 	  }
-	var getValue= document.getElementById("input2");
+	var getValue= document.getElementById("text");
 	  if (getValue.value !="") {
 		  getValue.value = "";
 	  }
 }
 function clearnews() {
-	localStorage.removeItem("input2");
-	localStorage.removeItem("input1");
+	localStorage.removeItem("text");
+	localStorage.removeItem("author");
 	const newsText = document.getElementById('news-text');
 	const newsAuthor = document.getElementById('news-author');
-	newsText.innerText = localStorage.getItem("input2");
-	newsAuthor.innerText = localStorage.getItem("input1");
+	newsText.innerText = localStorage.getItem("text");
+	newsAuthor.innerText = localStorage.getItem("author");
 }
 function boom() {
 	document.write("404 - Страница не найдена. <br> Зайдите позже или попробуйте обновить страницу.");

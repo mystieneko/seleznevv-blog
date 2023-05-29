@@ -9,10 +9,10 @@
   display: inherit;
 }
   /* Контейнер <div> - необходим для размещения выпадающего содержимого */
-  .dropdown {
+  /*.dropdown {
     position: relative;
     display: inline-block;
-  }
+  }*/
   
   /* Выпадающее содержимое (скрыто по умолчанию) */
   .dropdown-content {

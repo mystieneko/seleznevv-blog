@@ -4,11 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="script/news.js"></script>
+	<script src="script/news2.js"></script>
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/tabs.css" rel="stylesheet">
 	<link href="css/mobile.css" rel="stylesheet">
 	<link href="css/snackbar.css" rel="stylesheet">
 	<link href="css/themeswitch.css" rel="stylesheet">
+	<link href="css/dropdown.css" rel="stylesheet">
 	<script src="script/snackbar.js"></script>
 	<script defer src="script/modals.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -94,22 +96,46 @@
 					<i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Новая новость
 					<i class="close fa-solid fa-xmark"></i></h2> 
 				</div>
-				<div><input id="input1" type="text" name="author" class="inputbtn" placeholder="Автор новости" style="width: 50%;"></input></div>
-				<textarea style="text-align: left !important;" id="input2" type="textarea" name="text" width="30px" class="inputbtn; newstext" placeholder="Напишите что-нибудь..."></textarea>
+				<div><input id="author" type="text" name="author" class="inputbtn" placeholder="Автор новости" style="width: 50%;"></input></div>
+				<textarea style="text-align: left !important;" id="text" type="textarea" name="text" width="30px" class="inputbtn; newstext" placeholder="Напишите что-нибудь..."></textarea>
 				<br>
 				<button class="inputbtn" value="clear" onclick="clearInput(); showToast()" type="button">
 					<i class="fa-solid fa-eraser"></i>&nbsp;&nbsp;Очистить
 				</button>
 
-				<button style="float: right !important;" onclick="showToast(); addnews(); getnews();" type="button" class="nuploadbutton closebtn">
+				<!--button style="float: right !important;" onclick="showToast(); addnews(); getnews();" type="button" class="nuploadbutton closebtn">
 					<i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Добавить
-				</button>
+				</button-->
+				<div class="dropdown">
+        <button class="dropbtn nuploadbutton change-icon" disabled>Добавить&nbsp;&nbsp;
+            <i class="fach fa-solid fa-angle-down"></i>
+            <i class="fach fa-solid fa-angle-up"></i>
+        </button>
+        <div class="dropdown-content">
+              <button onclick="news_script1()" type="button">Слот 1</button>
+              <button onclick="news_script2()" type="button">Слот 2</button>
+              <button onclick="news_script3()" type="button">Слот 3</button>
+            <button onclick="news_script4()" type="button">Слот 4</button>
+            <button onclick="news_script5()" type="button">Слот 5</button>
+        </div>
+        </div>
 				</div>
 			</div>
 		</div><br>
 		<div id="snackbar">Выполнено!</div>
 		<h2 class="newspaper" id="textcenter">Новостная лента</h2>
-		<div class="newslist" id="textcenter"><p style="font-size: 12px" id="news-author"></p><p style="font-size: 20px" id="news-text">— нет новостей —</p></div>
+		<div class="newslist" id="textcenter">
+			<p style="font-size: 12px" id="news-author"></p>
+			<p style="font-size: 20px" id="news-text">— нет новости —</p>
+			<p style="font-size: 12px" id="news-author2"></p>
+			<p style="font-size: 20px" id="news-text2">— нет новости —</p>
+			<p style="font-size: 12px" id="news-author3"></p>
+			<p style="font-size: 20px" id="news-text3">— нет новости —</p>
+			<p style="font-size: 12px" id="news-author4"></p>
+			<p style="font-size: 20px" id="news-text4">— нет новости —</p>
+			<p style="font-size: 12px" id="news-author5"></p>
+			<p style="font-size: 20px" id="news-text5">— нет новости —</p>
+			</div>
 	</div>
 	<div class="footer" id="textcenter">
 		<p style="color: var(--p-text);"><a href="https://github.com/selezneww">selezneww</a>, <a href="https://github.com/4vanyek">4vanyek</a> | 2023</p>
