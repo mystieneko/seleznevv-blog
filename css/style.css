@@ -57,7 +57,7 @@ a:hover {
 }
 button {
     font-size: 18px;
-    padding: 0.6em 1.2em;
+    padding: 0.7em 1.4em;
     /*border: 1px solid transparent;*/
     border: none;
     border-radius: 6px;
@@ -73,7 +73,7 @@ button {
 .inputfield {
     /*display:inline-block;*/
     font-size: 18px;
-    background-color: var(--news-bg);
+    /*background-color: var(--news-bg);*/
     border-radius: 5px;
     padding: 8px 10px;
     margin: auto;
@@ -94,7 +94,8 @@ button {
 input, textarea {
     width: 100%;
     font-size: 18px;
-    padding: 8px 10px;
+    padding: 0.7em 1.4em;
+    padding-left: 0.7em;
     border: none;
     border-radius: 5px; 
     color: var(--input-color);
