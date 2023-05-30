@@ -104,15 +104,7 @@
 				</h2> 
 				</div>
 				<input id="author" type="text" name="author" class="inputbtn" placeholder="Автор новости" style="width: 60%;"></input>
-				<textarea 
-					style="text-align: left !important;"
-					id="text"
-					type="textarea"
-					name="text"
-					width="30px"
-					class="inputbtn; newstext"
-					placeholder="Напишите что-нибудь...">
-				</textarea>
+				<textarea style="text-align: left !important;" id="text" type="textarea" name="text" width="30px" class="inputbtn" placeholder="Напишите что-нибудь..."></textarea>
 				<br>
 				<button class="inputbtn" id="cleartoast" value="clear" onclick="clearInput();" type="button">
 					<i class="fa-solid fa-eraser"></i>&nbsp;&nbsp;Очистить
@@ -133,9 +125,11 @@
 			</div>
 		</div><br>
 		<h2 class="newspaper" id="textcenter">Новостная лента</h2>
-		<div class="newslist" id="textcenter">
-			<p style="font-size: 12px" id="news-author"></p>
-			<p style="font-size: 20px" id="news-text">— нет новости —</p>
+		<div class="newslist">
+			<div id="textcenter">
+				<p style="font-size: 12px" id="news-author"></p>
+				<p style="font-size: 20px" id="news-text">— нет новости —</p>
+			</div>
 			<!--p style="font-size: 12px" id="news-author2"></p>
 			<p style="font-size: 20px" id="news-text2">— нет новости —</p>
 			<p style="font-size: 12px" id="news-author3"></p>

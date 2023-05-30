@@ -28,7 +28,7 @@ h1, h2 {
     color: var(--p-text);
     padding: 1px;
     margin: 40px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 a {
     position:relative;
@@ -79,7 +79,7 @@ button {
     /*display:inline-block;*/
     font-size: 18px;
     /*background-color: var(--news-bg);*/
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 8px 10px;
     margin: auto;
     width: 45%;
@@ -102,7 +102,7 @@ input, textarea {
     padding: 0.7em 1.4em;
     padding-left: 0.7em;
     border: none;
-    border-radius: 5px; 
+    border-radius: 6px; 
     color: var(--input-color);
     background-color: var(--input-bg);
     transition-duration: 0.1s;
@@ -156,7 +156,7 @@ textarea:active, textarea:focus, input:active, input:focus {
     color: #000;
     padding: 16px 16px;
     margin: 60px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 /*.footer {
@@ -190,7 +190,7 @@ textarea:active, textarea:focus, input:active, input:focus {
     background-color: var(--modal-bg);
     margin: auto;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     width: 40%;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
