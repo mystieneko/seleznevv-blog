@@ -65,7 +65,7 @@ button {
     padding: 0.8em 1.6em;
     /*border: 1px solid transparent;*/
     border: none;
-    border-radius: 6px;
+    border-radius: 100px;
     color: var(--btn-color);
     margin: 5px 0 5px 0;
     background-color: var(--btn-bg);
@@ -96,7 +96,7 @@ input, textarea {
     padding: 0.7em 1.4em;
     padding-left: 0.7em;
     border: none;
-    border-radius: 6px; 
+    border-radius: 20px; 
     color: var(--input-color);
     background-color: var(--input-bg);
     transition-duration: 0.1s;
@@ -117,7 +117,7 @@ input:hover, textarea:hover {
 }
 .nuploadbutton, .closebtn {
     font-size: 18px;
-    border-radius: 6px;
+    border-radius: 100px;
     color: #fff;
     background-color: #6f47cd;
     /*margin: 5px;*/
