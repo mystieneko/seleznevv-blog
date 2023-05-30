@@ -28,7 +28,7 @@ h1, h2 {
     color: var(--p-text);
     padding: 1px;
     margin: 40px;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 a {
     position:relative;
