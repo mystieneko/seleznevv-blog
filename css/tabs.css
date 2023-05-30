@@ -1,3 +1,9 @@
+#tab3_label {
+  border-top-right-radius: 6px;
+}
+#tab1_label {
+  border-top-left-radius: 6px;
+}
 .pc-tab > input,
 .pc-tab section > div {
 	display: none;
