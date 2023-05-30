@@ -62,7 +62,7 @@ a:hover {
 }
 button {
     font-size: 18px;
-    padding: 0.7em 1.4em;
+    padding: 0.8em 1.6em;
     /*border: 1px solid transparent;*/
     border: none;
     border-radius: 6px;
@@ -76,18 +76,12 @@ button {
 }
 
 .inputfield {
-    /*display:inline-block;*/
-    font-size: 18px;
-    /*background-color: var(--news-bg);*/
-    border-radius: 6px;
-    padding: 8px 10px;
-    margin: auto;
-    width: 45%;
-    /* color: #008cff; */
+    padding: 0.5em;
 }
 
 .inputfield > .nuploadbutton, .inputfield > button {
     border: none;
+    margin: 2px;
 }
 .modal-content > button {
     margin: 0;  
