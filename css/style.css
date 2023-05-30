@@ -122,7 +122,7 @@ input:hover, textarea:hover {
     /*margin: 5px;*/
 }
 
-button:active, .nuploadbutton:hover, .closebtn:hover, .nuploadbutton:active, .nuploadbutton:focus, .closebtn:active, .closebtn:focus {
+button:active, .nuploadbutton:active, .nuploadbutton:focus, .closebtn:active, .closebtn:focus {
     transform: scale(0.9, 0.9);
 }
 
@@ -136,10 +136,6 @@ textarea:active, textarea:focus, input:active, input:focus {
     border-color: #0172ce;
     color: #fff;
 }*/
-.nuploadbutton:active, .nuploadbutton:focus {
-    background-color: #0060af;
-    border-color: #0060af;
-}
 
 .news-block {
     display: block;

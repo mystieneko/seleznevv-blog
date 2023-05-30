@@ -50,9 +50,9 @@ body {
   float: left;
   display: block !important;
   padding: 12px;
-  border-radius: 5px;
+  /*border-radius: 5px;
   border-bottom: 0;
-  background: var(--tabs-bg);
+  background: var(--tabs-bg);*/
   color: var(--p2-text);
   cursor: pointer;
   transition-duration: 0.2s;
@@ -61,9 +61,9 @@ body {
   background: var(--tabs-hover);
   transition-duration: 0.1s;
 }
-.pc-tab ul li label:active {
+/*.pc-tab ul li label:active {
   background: var(--tabs-active);
-}
+}*/
 .pc-tab ul li:not(:last-child) label {
   border-right-width: 0;
 }
@@ -73,8 +73,8 @@ body {
 .pc-tab section div {
   padding: 20px;
   width: 100%;
-  border-radius: 5px;
-  border-top: 0;
+  border-radius: 6px;
+  border-top-left-radius: 0;
   background: var(--tabs-bg2);
   color: var(--p2-text);
   transition-duration: 0.2s;
@@ -100,7 +100,7 @@ body {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: var(--tabs-bg2);
+  /*background: var(--tabs-bg2);*/
   left: 0;
   bottom: -1px;
 }

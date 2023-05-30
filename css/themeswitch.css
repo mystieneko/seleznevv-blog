@@ -1,11 +1,11 @@
 :root {
-  --bg: #f3faff;
+  --bg: #fff;
   --h-text: #000;
-  --p-text: #000;
+  --p-text: #fff;
   --p2-text: #000;
   --p2-text-checked: #000;
   --tabs-bg: #eee;
-  --tabs-bg2: #dad9d9;
+  --tabs-bg2: #f4f4f4;
   --modal-bg: #fefefe;
   --tabs-hover: #ddd;
   --tabs-active: #fff;
