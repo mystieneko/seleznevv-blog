@@ -184,7 +184,7 @@ textarea:active, textarea:focus, input:active, input:focus {
     background-color: var(--modal-bg);
     margin: auto;
     padding: 20px;
-    border-radius: 6px;
+    border-radius: 20px;
     width: 40%;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
