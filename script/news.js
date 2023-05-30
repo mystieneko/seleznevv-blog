@@ -7,7 +7,6 @@ function addnews(){
 	const newsAuthor = document.getElementById('news-author');
 	newsText.innerText = localStorage.getItem("text");
 	newsAuthor.innerText = localStorage.getItem("author");
-	showToast();
    }
 function getnews() {
 	const newsText = document.getElementById('news-text');
@@ -32,7 +31,4 @@ function clearnews() {
 	const newsAuthor = document.getElementById('news-author');
 	newsText.innerText = localStorage.getItem("text");
 	newsAuthor.innerText = localStorage.getItem("author");
-}
-function boom() {
-	document.write("404 - Страница не найдена. <br> Зайдите позже или попробуйте обновить страницу.");
 }
