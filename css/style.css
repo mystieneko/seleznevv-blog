@@ -64,7 +64,8 @@ button {
     color: var(--btn-color);
     margin: 5px 0 5px 0;
     background-color: var(--btn-bg);
-    transition: transform 150ms ease-out;
+    transition: transform ease 0.2s, box-shadow ease 0.2s;
+    /*transition: transform 150ms ease-out;*/
     text-shadow: none;
     cursor: pointer;
 }
@@ -121,7 +122,10 @@ input:hover, textarea:hover {
     background-color: #6f47cd;
     /*margin: 5px;*/
 }
-
+.nuploadbutton:hover {
+    box-shadow: 0 20px 80px -10px var(--primbuttn);
+    transition-duration: 0.2s;
+}
 button:active, .nuploadbutton:active, .nuploadbutton:focus, .closebtn:active, .closebtn:focus {
     transform: scale(0.9, 0.9);
 }
