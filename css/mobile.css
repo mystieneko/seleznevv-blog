@@ -1,6 +1,9 @@
 /* media queries go here */
 
 @media screen and (max-width: 700px) {
+    .pc-tab ul li label {
+        float: none;
+    }
     /*.nonmobile {
         display: none;
     }
