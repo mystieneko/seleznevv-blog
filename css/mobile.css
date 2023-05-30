@@ -1,6 +1,6 @@
 /* media queries go here */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
     .pc-tab ul li label {
         float: none;
     }
@@ -18,8 +18,10 @@
     }
 	.modal-content {
 		padding: 10px;
-        width: 95%;
-        height: 60%;
+        width: 70vh; /* Fallback for browsers that do not support Custom Properties */
+        width: calc(var(--vh, 1vh) * 70);
+        height: 55vh; /* Fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 55);
         box-sizing: border-box;
 		}
     .modal-content button, .modal-content .nuploadbutton {
@@ -34,13 +36,3 @@
 		width: 100%;
 		}
     }
-@media screen and (max-width: 1000px) {
-    .pc-tab ul li label {
-        float: none;
-    }
-    .modal-content {
-		padding: 10px;
-        width: 95%;
-        box-sizing: border-box;
-	}
-}
