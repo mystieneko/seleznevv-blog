@@ -10,7 +10,7 @@ newstoast.addEventListener("click", () => {
             title: 'Успешно',
             message: 'Новость добавлена!',
             type: 'success',
-            autoClose: 2000,
+            autoClose: 4000,
             progress: true
     });
     
