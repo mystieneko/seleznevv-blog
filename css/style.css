@@ -28,7 +28,7 @@ h1, h2 {
     color: var(--p-text);
     padding: 1px;
     margin: 40px;
-    border-radius: 20px;
+    border-radius: 6px;
 }
 a {
     position:relative;
@@ -65,7 +65,7 @@ button {
     padding: 0.8em 1.6em;
     /*border: 1px solid transparent;*/
     border: none;
-    border-radius: 100px;
+    border-radius: 6px;
     color: var(--btn-color);
     margin: 5px 0 5px 0;
     background-color: var(--btn-bg);
@@ -96,7 +96,7 @@ input, textarea {
     padding: 0.7em 1.4em;
     padding-left: 0.7em;
     border: none;
-    border-radius: 20px; 
+    border-radius: 6px; 
     color: var(--input-color);
     background-color: var(--input-bg);
     transition-duration: 0.1s;
@@ -117,7 +117,7 @@ input:hover, textarea:hover {
 }
 .nuploadbutton, .closebtn {
     font-size: 18px;
-    border-radius: 100px;
+    border-radius: 6px;
     color: #fff;
     background-color: #6f47cd;
     /*margin: 5px;*/
@@ -184,7 +184,7 @@ textarea:active, textarea:focus, input:active, input:focus {
     background-color: var(--modal-bg);
     margin: auto;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 6px;
     width: 40%;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;

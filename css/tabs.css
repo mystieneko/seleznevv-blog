@@ -1,8 +1,8 @@
 #tab3_label {
-  border-top-right-radius: 20px;
+  border-top-right-radius: 6px;
 }
 #tab1_label {
-  border-top-left-radius: 20px;
+  border-top-left-radius: 6px;
 }
 .pc-tab > input,
 .pc-tab section > div {
@@ -79,7 +79,7 @@ body {
 .pc-tab section div {
   padding: 20px;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 6px;
   border-top-left-radius: 0;
   background: var(--tabs-bg2);
   color: var(--p2-text);

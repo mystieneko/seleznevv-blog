@@ -18,10 +18,10 @@
     }
 	.modal-content {
 		padding: 10px;
-        width: 70vh; /* Fallback for browsers that do not support Custom Properties */
-        width: calc(var(--vh, 1vh) * 70);
-        height: 55vh; /* Fallback for browsers that do not support Custom Properties */
-        height: calc(var(--vh, 1vh) * 55);
+        width: 60vh; /* Fallback for browsers that do not support Custom Properties */
+        width: calc(var(--vh, 1vh) * 60);
+        height: 50vh; /* Fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 50);
         box-sizing: border-box;
 		}
     .modal-content button, .modal-content .nuploadbutton {
